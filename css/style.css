@@ -1,3 +1,4 @@
+/* COMMONS */
 * {
     margin: 0;
     padding: 0;
@@ -6,3 +7,64 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+.main-container {
+    display: flex;
+}
+
+
+/* ***********mobile first view ********** */
+/* less than 576px */
+/* HEADER */
+header {
+    width: calc(100% - 10px);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+}
+
+
+
+
+/* MAIN */
+.main-content {
+    width: calc(100% - 50px - 10px);
+}
+.main-aside {
+    min-width: 50px;
+}
+
+
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+
+
+/* *****DEBUG***** */
+.debug header {
+    background-color: lightpink;
+}
+.debug .main-container {
+    height: 600px;
+}
+.debug .main-aside {
+    height: 100%;
+    background-color: lightgreen;
+}
+.debug .main-content {
+    height: 100%;
+    background-color: lightskyblue;
+}
+.debug footer {
+    background-color: gray;
+}
+
