@@ -23,6 +23,23 @@ header {
     right: 10px;
     z-index: 9998;
 }
+.upgrade-flex {
+    display: flex;
+    justify-content: flex-end;
+}
+.upgrade-btn {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 2rem;
+    padding: 10px 25px;
+    margin-top: 15px;
+    margin-right: 2px;
+}
 
 
 
@@ -53,7 +70,7 @@ footer {
 
 /* *****DEBUG***** */
 .debug header {
-    background-color: lightpink;
+    background-color: black;
 }
 .debug .main-container {
     height: 600px;
