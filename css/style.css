@@ -10,17 +10,28 @@ body {
 .main-container {
     display: flex;
 }
-
+ul li {
+    list-style: none;
+}
+ul li a {
+    text-decoration: none;
+}
+.text-gray {
+    font-size: 8px;
+}
+.disappear {
+    display: none;
+}
 
 /* ***********mobile first view ********** */
 /* less than 576px */
 /* HEADER */
 header {
-    width: calc(100% - 50px - 10px);
-    height: 80px;
+    width: calc(100% - 30px);
+    height: 70px;
     position: fixed;
     top: 0;
-    right: 10px;
+    right: 0px;
     z-index: 9998;
 }
 .upgrade-flex {
@@ -46,12 +57,16 @@ header {
 
 /* MAIN */
 .main-content {
-    width: calc(100% - 50px - 10px);
+    width: calc(100%  - 30px);
     padding-top: 80px;
 }
 .main-aside {
-    min-width: 50px;
-    height: calc(100% - 80px);
+    min-width: 30px;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
 
@@ -59,7 +74,7 @@ header {
 /* FOOTER */
 footer {
     width: 100%;
-    height: 80px;
+    height: 70px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -72,16 +87,18 @@ footer {
 .debug header {
     background-color: black;
 }
-.debug .main-container {
-    height: 600px;
-}
 .debug .main-aside {
     background-color: lightgreen;
 }
+.debug .aside-top, .debug .aside-bottom {
+    background-color: lightpink;
+}
 .debug .main-content {
-    height: 100%;
+    /* height: 400px; */
     background-color: lightskyblue;
 }
+
+
 .debug footer {
     background-color: gray;
 }
