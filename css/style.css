@@ -9,6 +9,7 @@ body {
 }
 .main-container {
     display: flex;
+    height: 100%;
 }
 ul li {
     list-style: none;
@@ -25,21 +26,60 @@ ul li a {
 
 /* ***********mobile first view ********** */
 /* less than 576px */
-/* HEADER */
-header {
-    width: calc(100% - 30px);
-    height: 70px;
+/* MAIN */
+main {
+    height: calc(100vh - 60px);
+}
+/* main aside */
+.main-aside {
+    min-width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.aside-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*cambiare in flex-start quando sarà piu grande*/
+}
+.small-logo {
+    width: 20px;
+}
+.big-logo {
+    display: none;
+    /* width: 80px; */
+}
+.aside-top .home-list img {
+    width: 18px;
+}
+.aside-top .playlist h3 {
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.aside-top .playlist li.new-playlist span {
+    font-size: 10px;
+}
+.aside-top .playlist li.new-playlist i {
+    font-size: 25px;
+}
+/* main right */
+.main-right {
+    overflow: auto;
+}
+.topbar {
+    height: 60px;
     position: fixed;
     top: 0;
-    right: 0px;
-    z-index: 9998;
+    right: 0;
+    left: 30px;
+    background-color: rgba(0, 0, 0, 0.4);
 }
-.upgrade-flex {
+.topbar .upgrade-flex {
     display: flex;
     justify-content: flex-end;
 }
-.upgrade-btn {
-    font-size: 10px;
+.topbar .upgrade-btn {
+    font-size: 8px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -47,26 +87,9 @@ header {
     background-color: black;
     border: 1px solid white;
     border-radius: 2rem;
-    padding: 10px 25px;
+    padding: 8px 20px;
     margin-top: 15px;
-    margin-right: 2px;
-}
-
-
-
-
-/* MAIN */
-.main-content {
-    width: calc(100%  - 30px);
-    padding-top: 80px;
-}
-.main-aside {
-    min-width: 30px;
-    height: calc(100vh - 70px);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
+    margin-right: 15px;
 }
 
 
@@ -74,7 +97,7 @@ header {
 /* FOOTER */
 footer {
     width: 100%;
-    height: 70px;
+    height: 60px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -93,12 +116,9 @@ footer {
 .debug .aside-top, .debug .aside-bottom {
     background-color: lightpink;
 }
-.debug .main-content {
-    /* height: 400px; */
+.debug .main-right {
     background-color: lightskyblue;
 }
-
-
 .debug footer {
     background-color: gray;
 }
