@@ -13,8 +13,12 @@ ul li {
 ul li a {
     text-decoration: none;
 }
+h3 {
+    font-size: 12px;
+    color: white;
+}
 .text-gray {
-    font-size: 6px;
+    font-size: 12px;
     font-weight: 600;
     color: gray;
 }
@@ -35,12 +39,13 @@ main {
 }
 /* main aside */
 .main-aside {
-    min-width: 30px;
+    min-width: 45px;
     min-height: 270px;  
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 5px 0;
+    padding: 8px 0;
 }
 .aside-top, .aside-bottom {
     display: flex;
@@ -48,72 +53,66 @@ main {
     align-items: center;
 }
 .small-logo {
-    width: 20px;
+    width: 26px;
 }
 .big-logo {
     display: none;
-    width: 70px; 
+    width: 100px; 
 }
 .home-list li, .playlist li, .user-list li{
-    height: 16px;
-    line-height: 16px;
-}
-li.new-playlist {
-    height: 25px;
-    line-height: 25px;
+    height: 23px;
+    line-height: 23px;
 }
 .main-aside img, .main-aside span {
     vertical-align: middle;
 }
 .aside-top .home-list {
-    margin: 10px 0;
+    margin: 20px 0;
 }
 .aside-top .home-list img {
-    width: 15px;
+    width: 22px;
 }
 .aside-top .playlist h3 {
-    font-size: 8px;
     text-transform: uppercase;
-    color: white;
 }
 .aside-top .playlist .new-playlist {
-    margin-bottom: 3px;
+    margin-bottom: 10px;
 }
 .aside-top .playlist .new-playlist span {
-    font-size: 8px;
+    font-size: 14px;
     font-weight: 500;
     color: gray;
 }
 .aside-top .playlist .new-playlist i {
-    font-size: 20px;
+    font-size: 30px;
     vertical-align: middle;
     color: gray;
 }
 .aside-bottom .user-list .download img {
-    width: 8px;
+    width: 15px;
 }
 .aside-bottom .user-list .user-icon img {
-    height: 15px;
+    height: 20px;
 }
 .aside-bottom .user-list .user-icon span {
-    font-size: 8px;
+    font-size: 15px;
     font-weight: 600;
     color: white;
 }
 /* main right */
 .main-right {
-    width: calc(100% - 30px);
+    width: calc(100% - 45px);
     height: 100%;
     overflow-y: auto;
 }
 .topbar {
-    width: calc(100% - 30px);
+    width: calc(100% - 45px);
     height: 60px;
     position: fixed;
     top: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.4);
-    padding: 20px;
+    padding: 10px;
     z-index: 9999;
 }
 .topbar .upgrade-flex {
@@ -121,7 +120,7 @@ li.new-playlist {
     justify-content: flex-end;
 }
 .topbar .upgrade-btn {
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -129,11 +128,43 @@ li.new-playlist {
     background-color: black;
     border: 1px solid white;
     border-radius: 2rem;
-    padding: 8px 20px;
+    padding: 10px 22px;
+}
+.navbar {
+    width: 100%;
+    background: #141922;
+    margin-top: 60px;
+}
+.nav-container {
+    width: 100%;
+    height: 100%;
+}
+nav {
+    text-align: center;
+}
+.nav-list li {
+    display: inline-block;
+    margin: 10px;
+}
+.nav-list li a{
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: gray;
 }
 .main-content {
-    margin-top: 60px;
     padding: 20px;
+}
+.main-content .item {
+    width: 150px;
+    /* height: 200px; */
+}
+.main-content .item .album-img img {
+    width: 100%;
+}
+.main-content .item .album-description {
+    text-align: center;
+    padding: 5px;
 }
 
 
@@ -151,30 +182,25 @@ footer {
 
 
 /* *****DEBUG***** */
-.debug header {
-    background-color: black;
-}
-.debug .main-aside {
-    background-color: black;
-}
-.debug .aside-top, .debug .aside-bottom {
-    /* background-color: lightpink; */
-}
 .debug .main-right {
     background-color: lightskyblue;
 }
+.debug .item {
+    background-color: blue
+}
+
 .debug footer {
     background-color: gray;
 }
 
 
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 576px) {
     .disappear {
         display: inline-block; 
     }
     .main-aside {
-        min-width: 120px;
+        min-width: 150px;
         min-height: 300px;  
         padding: 5px;
     }
@@ -189,10 +215,20 @@ footer {
 
     }
     .main-right {
-        width: calc(100% - 120px);
+        width: calc(100% - 150px);
     }
     .topbar {
-    width: calc(100% - 120px);
+    width: calc(100% - 150px);
     }
+}
+
+
+@media screen and (min-width: 768px) {
+
+}
+
+
+@media screen and (min-width: 992px) {
+    
 }
 
