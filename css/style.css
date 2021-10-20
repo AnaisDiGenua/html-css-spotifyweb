@@ -25,6 +25,11 @@ h3 {
 .disappear {
     display: none;
 }
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* ***********mobile first view ********** */
 
@@ -156,8 +161,8 @@ nav {
     padding: 20px;
 }
 .main-content .item {
-    width: 150px;
-    /* height: 200px; */
+    width: calc(50% - 18px);
+    margin: 8px;
 }
 .main-content .item .album-img img {
     width: 100%;
@@ -224,11 +229,19 @@ footer {
 
 
 @media screen and (min-width: 768px) {
-
+    .main-content .item {
+        width: calc(25% - 18px);
+        margin: 8px;
+    }
 }
 
 
 @media screen and (min-width: 992px) {
-    
+    .row {
+        flex-wrap: nowrap;
+    }
+    .main-content .item {
+        width: calc(100% / 6 - 18px);
+    }
 }
 
