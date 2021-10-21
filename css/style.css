@@ -419,5 +419,15 @@ footer {
     .main-content .item {
         width: calc(100% / 6 - 18px);
     }
+    .player-left .favourite-folder-icon i {
+        font-size: 18px;
+    }
+    .player-right .right-icons i {
+        font-size: 18px;
+    }
+    .player-center .player-btn i {
+        font-size: 18px;
+        margin: 10px 15px ;
+    }
 }
 
