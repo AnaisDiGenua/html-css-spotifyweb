@@ -10,7 +10,7 @@ body {
 ul li {
     list-style: none;
 }
-ul li a {
+a {
     text-decoration: none;
 }
 h2 {
@@ -21,7 +21,7 @@ h3 {
     color: white;
 }
 .text-gray {
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 600;
     color: gray;
 }
@@ -54,7 +54,7 @@ main {
 /* main aside */
 .main-aside {
     min-width: 45px;
-    min-height: 250px;  
+    min-height: 400px;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -67,15 +67,15 @@ main {
     align-items: center;
 }
 .small-logo {
-    width: 26px;
+    width: 35px;
 }
 .big-logo {
     display: none;
-    width: 100px; 
+    width: 130px; 
 }
 .home-list li, .playlist li {
-    height: 25px;
-    line-height: 25px;
+    height: 30px;
+    line-height: 30px;
 }
 .main-aside img, .main-aside span {
     vertical-align: middle;
@@ -84,20 +84,28 @@ main {
     margin: 20px 0;
 }
 .aside-top .home-list img {
-    width: 22px;
+    width: 25px;
+}
+.aside-top .playlist {
+    width: 90%;
+}
+.aside-top .p-list {
+    height: 177px;
+    overflow-y: auto;
 }
 .aside-top .playlist h3 {
     text-transform: uppercase;
+    margin-bottom: 8px;
 }
-.aside-top .playlist .new-playlist {
-    margin-bottom: 10px;
+.aside-top .playlist .create-playlist {
+    margin-bottom: 8px;
 }
-.aside-top .playlist .new-playlist span {
+.aside-top .playlist .create-playlist span {
     font-size: 14px;
     font-weight: 500;
     color: gray;
 }
-.aside-top .playlist .new-playlist i {
+.aside-top .playlist .create-playlist i {
     font-size: 30px;
     vertical-align: middle;
     color: gray;
@@ -105,8 +113,14 @@ main {
 .aside-bottom .download img {
     width: 15px;
 }
+.aside-bottom .download span {
+    font-size: 10px;
+}
 .aside-bottom .user-icon img {
-    height: 20px;
+    width: 24px;
+    height: 24px;
+    background-color: gray;
+    border-radius: 50%;
 }
 .aside-bottom .user-icon span {
     font-size: 13px;
@@ -162,10 +176,25 @@ nav {
     margin: 10px;
 }
 .nav-list li a{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     color: gray;
+}
+.nav-list li:hover a{
+    color: white;
+    transition: 0.4s;
+}
+.nav-list .green-line {
+    visibility: hidden;
+    width: 35px;
+    height: 2px;
+    background-color: lime;
+    cursor: pointer;
+    margin: 5px auto 0;
+}
+.nav-list li:hover .green-line {
+    visibility: visible;
 }
 .main-content {
     padding: 20px;
@@ -289,9 +318,9 @@ footer {
         display: inline-block; 
     }
     .main-aside {
-        min-width: 150px;
-        min-height: 300px;  
-        padding: 5px;
+        min-width: 200px;
+        min-height: 400px; 
+        padding: 10px;
     }
     .aside-top, .aside-bottom {
         align-items: flex-start;
@@ -303,10 +332,10 @@ footer {
         display: inline-block;
     }
     .main-right {
-        width: calc(100% - 150px);
+        width: calc(100% - 200px);
     }
     .topbar {
-    width: calc(100% - 150px);
+        width: calc(100% - 200px);
     }
     .player-left > div {
         margin: 0 10px;
