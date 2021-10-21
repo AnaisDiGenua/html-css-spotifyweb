@@ -73,12 +73,16 @@ main {
     display: none;
     width: 130px; 
 }
+.main-aside img, .main-aside span {
+    vertical-align: middle;
+}
 .home-list li, .playlist li {
     height: 30px;
     line-height: 30px;
 }
-.main-aside img, .main-aside span {
-    vertical-align: middle;
+.home-list li:hover span {
+    color: white;
+    transition: 0.4s;
 }
 .aside-top .home-list {
     margin: 20px 0;
@@ -100,21 +104,33 @@ main {
 .aside-top .playlist .create-playlist {
     margin-bottom: 8px;
 }
+.aside-top .playlist .create-playlist i {
+    font-size: 30px;
+    vertical-align: middle;
+    color: gray;
+}
 .aside-top .playlist .create-playlist span {
     font-size: 14px;
     font-weight: 500;
     color: gray;
 }
-.aside-top .playlist .create-playlist i {
-    font-size: 30px;
-    vertical-align: middle;
-    color: gray;
+.aside-top .playlist .create-playlist:hover span {
+    color: white;
+    transition: 0.4s;
+}
+.aside-top .playlist .p-list li:hover span {
+    color: white;
+    transition: 0.4s;
 }
 .aside-bottom .download img {
     width: 15px;
 }
 .aside-bottom .download span {
     font-size: 10px;
+}
+.aside-bottom .download:hover span {
+    color: white;
+    transition: 0.4s;
 }
 .aside-bottom .user-icon img {
     width: 24px;
