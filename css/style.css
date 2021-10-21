@@ -306,6 +306,9 @@ footer {
     color: gray;
     display: block;
 }
+.player-left .favourite-folder-icon i:hover {
+    color: white;
+}
 .player-left > div {
     margin: 0 5px;
 }
@@ -322,9 +325,10 @@ footer {
 .player-center {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-grow: 3;
+    padding: 12px 0;
 }
 .player-center .control-bar {
     display: flex;
@@ -340,15 +344,18 @@ footer {
 .player-center .player-btn i {
     font-size: 13px;
     vertical-align: middle;
-    margin: 10px 10px ;
+    margin: 0 10px ;
 }
-.player-center .player-btn i.fa-play-circle {
+.player-center .player-btn .fa-play-circle {
     font-size: 25px;
 }
 .player-center .control-bar span.minute {
     font-size: 10px;
     font-weight: 600;
     color: white;
+}
+.player-center .fa-play-circle:hover {
+    transform: scale(1.2);
 }
 
 
@@ -427,7 +434,7 @@ footer {
     }
     .player-center .player-btn i {
         font-size: 18px;
-        margin: 10px 15px ;
+        margin: 0 15px ;
     }
 }
 
