@@ -354,7 +354,7 @@ footer {
     font-weight: 600;
     color: white;
 }
-.player-center .fa-play-circle:hover {
+.player-center .player-btn .fa-play-circle:hover {
     transform: scale(1.2);
 }
 
