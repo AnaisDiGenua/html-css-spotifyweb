@@ -350,7 +350,7 @@ footer {
     margin: 5px;
 }
 .player-right .playbar {
-    width: 50%;
+    width: 40%;
 }
 .player-right .playbar .volume-bar {
     width: 80%;
@@ -443,6 +443,14 @@ footer {
     }
     .player-left .favourite-folder-icon i {
         display: inline-block;
+        font-size: 18px;
+    }
+    .player-right .right-icons i {
+        font-size: 18px;
+    }
+    .player-center .player-btn i {
+        font-size: 18px;
+        margin: 0 15px ;
     }
 }
 
@@ -453,16 +461,6 @@ footer {
     }
     .main-content .item {
         width: calc(100% / 6 - 18px);
-    }
-    .player-left .favourite-folder-icon i {
-        font-size: 18px;
-    }
-    .player-right .right-icons i {
-        font-size: 18px;
-    }
-    .player-center .player-btn i {
-        font-size: 18px;
-        margin: 0 15px ;
     }
 }
 
